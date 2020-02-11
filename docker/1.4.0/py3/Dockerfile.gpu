@@ -163,5 +163,5 @@ RUN chmod +x /usr/local/bin/start_with_right_hostname.sh
 RUN curl -o /license.txt https://aws-dlc-licenses.s3.amazonaws.com/pytorch/license.txt
 
 # Starts framework
-ENTRYPOINT ["bash", "-m", "start_with_right_hostname.sh"]
+ENTRYPOINT ["bash", "start_with_right_hostname.sh"]
 CMD ["/bin/bash"]
